@@ -3,15 +3,55 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CitySynth</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet"
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/carousel1.css" rel="styleshett">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>    
+	<style type="text/css">
+		.carousel {
+			overflow: hidden;
+		}
+		.carousel .item {
+			-webkit-transition: opacity 1s;
+			-moz-transition: opacity 1s;
+			-ms-transition: opacity 1s;
+			-o-transition: opacity 1s;
+			transition: opacity 1s;
+		}
+		.carousel .active.left, .carousel .active.right {
+			left:0;
+			opacity:0;
+			z-index:2;
+		}
+		.carousel .next, .carousel .prev {
+			left:0;
+			opacity:1;
+			z-index:1;
+		}
+
+
+		div.c-wrapper{
+			width: 80%; /* for example */
+			margin: 0;
+		}
+
+		.carousel-inner > .item > img, 
+		.carousel-inner > .item > a > img{
+			width: 100%; /* use this, or not */
+			margin: 0;
+		}
+
+	</style>
+
 <div class="navbar navbar-inverse default navbar-fixed-top">
     <!--If the top bar moves, change static to fixed and at the end of this dic class, adjust the next div class with some padding-->
 	<style type="text/css">
 	p{
-		margin: 0px 0px 0px 0px;;
+		margin: 0px 0px 0px 0px;
+	}
+	div{
+		margin: 0px 0px 0px 0px;
 	}
     </style>
     	<div class="container">
@@ -50,9 +90,11 @@
         </div>
     
     </div>
-       
-    <div id="myCarousel" class="carousel">
-    	
+
+
+
+    <div id="myCarousel" class="carousel container slide">
+    	<h2>&nbsp;</h2>
     	<ol class="carousel-indicators">
     		<li data-target = "#myCarousel" data-slide-to = "0" class="active"> </li>
     		<li data-target = "#myCarousel" data-slide-to = "1"> </li>
@@ -62,29 +104,52 @@
     	<div class="carousel-inner">
 
     		<div class="item active" >
-    		
-    			<img src="img/a.jpg" alt = "a" class="img-resposive">
+
+    			<img src="img/a.jpg" alt = "Error..a.." class="img-resposive">
+    			<div class="carousel-caption">
+    				<h3>Something on Image 1</h3>
+    			</div>
 
     		</div>
 
     		<div class="item" >
-    		
-    				<img src="img/b.jpg" alt = "a" class="img-resposive">
 
-	    	</div>
+    			<img src="img/b.jpg" alt = "Error..b.." class="img-resposive">
+    			<div class="carousel-caption">
+    				<h3>Something on Image 2</h3>
+    			</div>
+    		</div>
 
-	    	<div class="item" >
-    		
-    				<img src="img/c.jpg" alt = "a" class="img-resposive">
+    		<div class="item" >
+
+    			<img src="img/c.jpg" alt = "Error..c.." class="img-resposive">
+    			<div class="carousel-caption">
+    				<h3>Something on Image 3</h3>
+    			</div>
 
     		</div>	
 
     	</div>
 
+
+    	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+    		<span class = "icon-prev"></span>
+    	</a>
+
+    	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+    		<span class = "icon-next"></span>
+    	</a>
+
     </div>
     
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$('.carousel').carousel({interval: 5000});
+    	});
+    </script>
+
     
 </body>
 </html>
