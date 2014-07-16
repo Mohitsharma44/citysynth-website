@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CitySynth</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/carousel1.css" rel="styleshett">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>    
@@ -40,6 +39,22 @@
 		.carousel-inner > .item > a > img{
 			width: 100%; /* use this, or not */
 			margin: 0;
+		}
+
+		#myCarousel{
+			float:right;
+			width:65%;
+			overflow:hidden;
+		}
+
+		#text{
+			float:left;
+			width:35%;
+			overflow:hidden;
+		} 
+
+		.carousel-control.left, .carousel-control.right {
+			background-image: none;
 		}
 
 	</style>
@@ -94,7 +109,7 @@
 
 
     <div id="myCarousel" class="carousel container slide">
-    	<h2>&nbsp;</h2>
+    	<h2></br></h2>
     	<ol class="carousel-indicators">
     		<li data-target = "#myCarousel" data-slide-to = "0" class="active"> </li>
     		<li data-target = "#myCarousel" data-slide-to = "1"> </li>
@@ -133,13 +148,19 @@
 
 
     	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-    		<span class = "icon-prev"></span>
+    		 <img src="img/left.png" height="50%" width="50%" style="margin:110px 0px" />
     	</a>
 
     	<a class="carousel-control right" href="#myCarousel" data-slide="next">
-    		<span class = "icon-next"></span>
+    		 <img src="img/right.png" height="50%" width="50%" style="margin:110px 0px"/>
     	</a>
 
+    </div>
+
+    <div id="text">
+    	<p></br></br></br>
+    		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+    	</p>
     </div>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
