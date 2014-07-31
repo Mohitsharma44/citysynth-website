@@ -194,8 +194,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                  <a href="./sites.php" class="navbar-btn btn btn-success">Sign in</a>
-                  <!--<button type="submit" class="btn btn-success">Sign in</button>-->
+                  <form action="./sites.php">
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                  </form>
                   <a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>
                 </div>
               </div>
