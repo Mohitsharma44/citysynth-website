@@ -33,7 +33,7 @@
   </script>
 
   <body>
-    <div class="container" style="margin: 10px;">
+  <div class="container" style="margin: 10px; width: 50%;">
       <div class="row"><h3>New Registration</h3>
       </div>
 
