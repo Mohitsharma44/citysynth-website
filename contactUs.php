@@ -10,19 +10,19 @@
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <style type="text/css">
-  body{
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
+    body{
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      
-    <div class="span6">Left</div>
-    <div class="span6">Right</div>
-    </div>
+  <div class="container well">
+
+<div class="row">
+  <div class="col-xs-6">.col-xs-6</div>
+  <div class="col-xs-6">.col-xs-6</div>
+</div>
 
   </div>
 
