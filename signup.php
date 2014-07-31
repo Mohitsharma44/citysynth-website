@@ -46,6 +46,7 @@
       #signin{
         width: 100px;
         border: 1px;
+        float: left;
       }
     </style>
     <div id="wrapper">
