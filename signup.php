@@ -18,15 +18,17 @@
   </head>
 
   <script type="text/javascript">
-    function ValidateForm(frm) {
+function ValidateForm(frm) {
 if (frm.FirstName.value == "") {alert('First Name is required.');frm.FirstName.focus();return false;}
 if (frm.LastName.value == "") {alert('Last Name is required.');frm.LastName.focus();return false;}
-if (frm.Email.value == "") {alert('Email address is required.');frm.Email.focus();return false;}
+if (frm.Email.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
 if (frm.Email.value.indexOf("@") < 1 || frm.Email.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email.focus();return false;}
-if (frm.Address.value == "") {alert('Address is required.');frm.Address.focus();return false;}
-if (frm.file.value == "") {alert('Image Upload is required.');frm.file.focus();return false;}
-if (frm.password.value == "") {alert('Password is required.');frm.password.focus();return false;}
+if (frm.Address1.value == "") {alert('Address is required.');frm.Address1.focus();return false;}
+if (frm.City.value == "") {alert('City is required.');frm.City.focus();return false;}
+if (frm.file.value == "") {alert('Image Upload is required.');frm.City.focus();return false;}
+if (frm.Password.value == "") {alert('Password is required.');frm.Password.focus();return false;}
 if (frm.site.value == "") {alert('Site Name is required.');frm.site.focus();return false;}
+if (frm.Password.value != frm.Confirm.value) {alert('Passwords dont match');return false;}
 return true; }
   </script>
 
@@ -36,42 +38,17 @@ return true; }
   </div>
  
   <form action="add.php?entity=user" method="post" onsubmit="return ValidateForm(this);" enctype="multipart/form-data" role="form" class="form-horizontal well">
-    <div class="form-group">
-      <label for="sitename" class="col-md-2">
-        Sitename
-      </label>
-      <div class="col-md-10">
-        <input name="site" type="text" class="form-control" id="sitename" placeholder="Enter Name for your site">
-      </div>
-    </div>
 
     <div class="form-group">
       <label for="firstname" class="col-md-2">
         First Name:
       </label>
       <div class="col-md-10">
-        <input name="FirstName" type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+        <input name="FirstName" type="text" class="form-control" id="FirstName" placeholder="Enter First Name">
+        <input name="LastName" type="text" class="form-control" id="LasName" placeholder="Enter Last Name">
       </div>
  
  
-    </div>
- 
-    <div class="form-group">
-      <label for="lastname" class="col-md-2">
-        Last Name:
-      </label>
-      <div class="col-md-10">
-        <input name="LastName" type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
-      </div>
-    </div>
- 
-    <div class="form-group">
-      <label for="address" class="col-md-2">
-        Address:
-      </label>
-      <div class="col-md-10">
-        <input name="Address" type="text" class="form-control" id="address" placeholder="Enter your address along with zip code">
-      </div>
     </div>
 
     <div class="form-group">
@@ -85,19 +62,85 @@ return true; }
         </p>
       </div>
     </div>
+
+
+ 
+    <div class="form-group">
+      <label for="phone" class="col-md-2">
+        Phone:
+      </label>
+      <div class="col-md-10">
+        <input name="CellPhone" type="text" class="form-control" id="CellPhone" placeholder="Enter your Contact Number">
+      </div>
+    </div>
+
+
+ 
+    <div class="form-group">
+      <label for="address" class="col-md-2">
+        Address:
+      </label>
+      <div class="col-md-10">
+        <input name="Address" type="text" class="form-control" id="Address" placeholder="Enter your address along with zip code">
+      </div>
+    </div>
+
+
+ 
+    <div class="form-group">
+      <label for="city" class="col-md-2">
+        City:
+      </label>
+      <div class="col-md-10">
+        <input name="City" type="text" class="form-control" id="City" placeholder="Enter your City">
+      </div>
+    </div>
+
+
+ 
+    <div class="form-group">
+      <label for="State" class="col-md-2">
+        State:
+      </label>
+      <div class="col-md-10">
+        <input name="State" type="text" class="form-control" id="State" placeholder="Enter your State">
+      </div>
+    </div>
+
+
+ 
+    <div class="form-group">
+      <label for="Zip/ Postal Code" class="col-md-2">
+        Address:
+      </label>
+      <div class="col-md-10">
+        <input name="Zip" type="text" class="form-control" id="Zip" placeholder="">
+      </div>
+    </div>
+
+
  
     <div class="form-group">
       <label for="password" class="col-md-2">
         Password:
       </label>
       <div class="col-md-10">
-        <input name="password" type="password" class="form-control" id="password" placeholder="Enter Password">
-        <p class="help-block">
-          Min: 6 characters (Alphanumeric only)
-        </p>
+        <input name="Password" type="password" class="form-control" id="Password" placeholder="Enter Password">
       </div>
+
+      
  
+    <div class="form-group">
+      <label for="address" class="col-md-2">
+        Confirm Password:
+      </label>
+      <div class="col-md-10">
+        <input name="Confirm" type="text" class="form-control" id="Confirm" placeholder="Enter Password again">
+      </div>
+    </div>
+
  
+
     </div>
  
     <div class="form-group">
@@ -105,12 +148,23 @@ return true; }
         Upload Image:
       </label>
       <div class="col-md-10">
-        <input name="file" type="file" name="uploadimage" id="uploadimage">
+        <input name="file" type="file" name="file" id="file">
         <p class="help-block">
           Allowed formats: jpeg, jpg, gif, png
         </p>
       </div>
+    
+
  
+    <div class="form-group">
+      <label for="site" class="col-md-2">
+        Site Name:
+      </label>
+      <div class="col-md-10">
+        <input name="site" type="text" class="form-control" id="site" placeholder="Enter name for your site">
+      </div>
+    </div>
+
  
     </div>
  
