@@ -141,8 +141,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
       <div class="collapse navbar-collapse navHeaderCollapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="./index.php">Home</a></li>
+          <li><a href="./index.php">Home</a></li>
           <li><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
+          <li class="active"><a href="./sites.php">Live Feed</a></li>
           <li class="dropdown">
             <a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Time Lapse Videos <b class="caret"></b></a>
             <ul class = "dropdown-menu">
