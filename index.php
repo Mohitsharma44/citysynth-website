@@ -210,7 +210,7 @@
 							<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-10">
 								<button type="submit" class="btn btn-success">Sign in</button>
-								<a href = "./signup.php" class="navbar-btn btn-success btn pull-right">Register</a>
+								<a href = "./signup.php" class="navbar-btn btn-primary">Register</a>
 								</div>
 							</div>
 						</form>
