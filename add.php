@@ -64,7 +64,7 @@
 			}
 			else
 			{
-				header("Location: sign up.php?error=1");
+				header("Location: signup.php?error=1");
 				exit;
 			}
 	}
