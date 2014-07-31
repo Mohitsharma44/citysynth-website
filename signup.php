@@ -43,6 +43,7 @@
         border: 1px;
       }
       #signin{
+        width: 100px;
         border: 1px;
       }
     </style>
