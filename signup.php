@@ -8,23 +8,21 @@
   <link href="styles.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-</head>
-
-<script type="text/javascript">
-  function ValidateForm(frm) {
-    if (frm.FirstName.value == "") {alert('First Name is required.');frm.FirstName.focus();return false;}
-    if (frm.LastName.value == "") {alert('Last Name is required.');frm.LastName.focus();return false;}
-    if (frm.Email.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
-    if (frm.Email.value.indexOf("@") < 1 || frm.Email.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email.focus();return false;}
-    if (frm.Address.value == "") {alert('Address is required.');frm.Address.focus();return false;}
-    if (frm.City.value == "") {alert('City is required.');frm.City.focus();return false;}
-    if (frm.file.value == "") {alert('Image Upload is required.');frm.City.focus();return false;}
-    if (frm.Password.value == "") {alert('Password is required.');frm.Password.focus();return false;}
-    if (frm.site.value == "") {alert('Site Name is required.');frm.site.focus();return false;}
-    if (frm.Password.value != frm.Confirm.value) {alert('Passwords dont match');return false;}
-    return true; }
-  </script>
-
+  <script type="text/javascript">
+    function ValidateForm(frm) {
+      if (frm.FirstName.value == "") {alert('First Name is required.');frm.FirstName.focus();return false;}
+      if (frm.LastName.value == "") {alert('Last Name is required.');frm.LastName.focus();return false;}
+      if (frm.Email.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+      if (frm.Email.value.indexOf("@") < 1 || frm.Email.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email.focus();return false;}
+      if (frm.Address.value == "") {alert('Address is required.');frm.Address.focus();return false;}
+      if (frm.City.value == "") {alert('City is required.');frm.City.focus();return false;}
+      if (frm.file.value == "") {alert('Image Upload is required.');frm.City.focus();return false;}
+      if (frm.Password.value == "") {alert('Password is required.');frm.Password.focus();return false;}
+      if (frm.site.value == "") {alert('Site Name is required.');frm.site.focus();return false;}
+      if (frm.Password.value != frm.Confirm.value) {alert('Passwords dont match');return false;}
+      return true; }
+    </script>
+  </head>
   <body>
 
     <?php   
@@ -330,7 +328,7 @@
             <div class="container" style="margin: 10px;" id="signin">
               <div class="row"><h3>Existing Users/ Sign In</h3>
               </div>
-              <form class="form-horizontal well" role="form">
+              <form class="form-horizontal well" role="form" method="post" action="add.php?entity=login" name="aform" target="_top">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                   <div class="col-sm-10">
