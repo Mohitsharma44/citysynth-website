@@ -33,8 +33,21 @@
   </script>
 
   <body>
-    <div id="wrap">
-      <div class="container" style="margin: 10px; width: 50%;">
+    <style type="text/css">
+      #wrapper{
+        width: 800px;
+        border: 1px solid black;
+      }
+      #register {
+        width: 500px;
+        border: 1px;
+      }
+      #signin{
+        border: 1px;
+      }
+    </style>
+    <div id="wrapper">
+      <div class="container" style="margin: 10px;" id="register">
         <div class="row"><h3>New Registration</h3>
         </div>
 
@@ -188,7 +201,7 @@
           </form>
         </div>
 
-        <div class="container" style="margin: 10px; float:left; width: 50%;">
+        <div class="container" style="margin: 10px;" id="signin">
           <form class="form-horizontal" role="form">
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
