@@ -113,7 +113,7 @@
 			<div class = "container">
 
 				<p class="navbar-text pull-left">Site Built by Mohit</p>
-				<a href = "./index.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
+				<a href = "./signup.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
 
 			</div>
 
@@ -209,27 +209,27 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-10">
-								<button type="submit" class="btn btn-success">Sign in</button>
-								<a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>
+									<button type="submit" class="btn btn-success">Sign in</button>
+									<a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>
 								</div>
 							</div>
 						</form>
 					</div>
 					<div class="modal-footer">
 						<p class="italic">Signing in will give you access to the live feed <br/>from 
-						the cameras of other volunteers.</p>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							the cameras of other volunteers.</p>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('.carousel').carousel({interval: 5000});
-			});
-		</script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('.carousel').carousel({interval: 5000});
+				});
+			</script>
 
 
-	</body>
-	</html>
+		</body>
+		</html>
