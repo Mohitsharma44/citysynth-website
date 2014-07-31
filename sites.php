@@ -109,6 +109,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <div style="width:50%; height:100%;float:right" id="tp">
 
     </div> 
+    <?php } ?>
   </div>
 </body>
 </html>
