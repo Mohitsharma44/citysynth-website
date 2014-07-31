@@ -108,7 +108,7 @@
 						<li>
 						<?php
 						if (isset($_SESSION['user']))
-							echo "<a>Hello ".$_SESSION['user']."</a>;
+							echo "<a>Hello ".$_SESSION['user']."</a>";
 						?>
 					</li>
 					</ul>
