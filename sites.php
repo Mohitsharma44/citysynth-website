@@ -97,6 +97,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <body>
 
+  <?php   
+  if (isset($_GET['login_error']))
+  {
+    echo "<script>alert('Wrong ID and password')</script>";
+  }
+  if (isset($_GET['error']))
+  {
+    echo "<script>alert('Error in registering. Please try again')</script>";
+  }
+
+  ?> 
+
   <style type="text/css">
 
     div.c-wrapper{
@@ -139,11 +151,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
             </ul></li>
             <li><a href="#">Contact Us</a></li>
             <li>
-            <?php
-            if (isset($_SESSION['user']))
-              echo "<a href='logout.php'>Logout ".$_SESSION['user']."</a>";
-            ?>
-          </li>
+              <?php
+              if (isset($_SESSION['user']))
+                echo "<a href='logout.php'>Logout ".$_SESSION['user']."</a>";
+              ?>
+            </li>
           </ul>
         </div>
 
@@ -194,7 +206,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                 <a class="btn btn-success" href="sites.php" role="button" type="submit" value="login">Sign In</a>
+                  <button type="submit" class="btn btn-success">Sign in</button>
                   <a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>
                 </div>
               </div>
@@ -213,7 +225,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <div class="well" style="margin: 20px 0px 0px 0px">
         <?php 
         if (!isset($_SESSION['user'])){ ?>
-          <h2><a href="#myModal" data-toggle="modal">Login </a> to see the map</h2>
+        <h2><a href="#myModal" data-toggle="modal">Login </a> to see the map</h2>
         <?php }
         else
         {
