@@ -21,9 +21,9 @@
     function ValidateForm(frm) {
 if (frm.FirstName.value == "") {alert('First Name is required.');frm.FirstName.focus();return false;}
 if (frm.LastName.value == "") {alert('Last Name is required.');frm.LastName.focus();return false;}
-if (frm.Email.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.Email.value == "") {alert('Email address is required.');frm.Email.focus();return false;}
 if (frm.Email.value.indexOf("@") < 1 || frm.Email.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email.focus();return false;}
-if (frm.Address.value == "") {alert('Address is required.');frm.Address1.focus();return false;}
+if (frm.Address.value == "") {alert('Address is required.');frm.Address.focus();return false;}
 if (frm.file.value == "") {alert('Image Upload is required.');frm.file.focus();return false;}
 if (frm.password.value == "") {alert('Password is required.');frm.password.focus();return false;}
 if (frm.site.value == "") {alert('Site Name is required.');frm.site.focus();return false;}
