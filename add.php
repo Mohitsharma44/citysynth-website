@@ -83,7 +83,7 @@
 		}
 		else
 		{
-			header("Location:sign up.php?login_error=1");
+			header("Location:signup.php?login_error=1");
 		}
 	}
 ?>
