@@ -19,10 +19,10 @@
 <body>
   <div class="container well">
 
-<div class="row">
-  <div class="col-xs-6">.col-xs-6</div>
-  <div class="col-xs-6">.col-xs-6</div>
-</div>
+    <div class="row">
+    <div class="col-xs-6">Left</div>
+      <div class="col-xs-6">Right</div>
+    </div>
 
   </div>
 
