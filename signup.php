@@ -204,7 +204,9 @@
         </div>
 
         <div class="container" style="margin: 10px;" id="signin">
-          <form class="form-horizontal" role="form">
+          <div class="row"><h3>Existing Users/ Sign In</h3>
+          </div>
+          <form class="form-horizontal well" role="form">
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
               <div class="col-sm-10">
