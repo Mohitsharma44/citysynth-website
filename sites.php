@@ -129,14 +129,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
       <div class="collapse navbar-collapse navHeaderCollapse">
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            Welcome,
-            <?php
-            if (isset($_SESSION['user']))
-              echo "<a>Hello ".$_SESSION['user']."</a>"."<a href='logout.php'>Logout</a>";
-            ?>
-
-          </li>
           <li class="active"><a href="./index.php">Home</a></li>
           <li><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
           <li class="dropdown">
@@ -146,6 +138,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
               <li><a href="#">Brooklyn</a></li>
             </ul></li>
             <li><a href="#">Contact Us</a></li>
+            <li>
+            <?php
+            if (isset($_SESSION['user']))
+              echo "<a href='logout.php'>Logout ".$_SESSION['user']."</a>";
+            ?>
+          </li>
           </ul>
         </div>
 
