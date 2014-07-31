@@ -62,6 +62,11 @@
 
 		p.italic {font-style:italic;float: left;}
 
+		.myModal a{
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+
 	</style>
 
 	<div class="navbar navbar-inverse default navbar-fixed-top">
