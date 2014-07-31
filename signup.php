@@ -39,7 +39,7 @@
         color: #808080;
       }
       #register {
-        width: 500px;
+        width: 700px;
         border: 1px;
         float: left;
       }
