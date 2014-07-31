@@ -4,13 +4,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sites</title>
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-  <script src="js/jquery.flexslider.js"></script>
-  <script type="text/javascript" charset="utf-8">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
     $(window).load(function() {	  
       $('.flexslider').flexslider();	 
 
