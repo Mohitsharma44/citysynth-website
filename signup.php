@@ -273,7 +273,7 @@
                   Confirm Password:
                 </label>
                 <div class="col-md-10">
-                  <input name="Confirm" type="text" class="form-control" id="Confirm" placeholder="Enter Password again">
+                  <input name="Confirm" type="password" class="form-control" id="Confirm" placeholder="Enter Password again">
                 </div>
               </div>
 
@@ -352,7 +352,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-success">Sign in</button>
+                    <button type="submit" value="Login" class="btn btn-success">Sign in</button>
                     <a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>
                   </div>
                 </div>
