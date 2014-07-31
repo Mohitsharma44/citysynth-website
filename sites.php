@@ -49,7 +49,7 @@
   longitude = new Array();
   <?php    $count = 1;   ?>
   $.get('myFile.txt', function(myContentFile) {
-   var lines = myContentFile.split("\r\n");
+   var lines = myContentFile.split("\n");
    var n=m=0;
    for(var i  in lines){
     if(i%2==0)
