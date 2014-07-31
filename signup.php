@@ -36,7 +36,7 @@
     <style type="text/css">
       #wrapper{
         border: 1px 
-        border-color: #808080;
+        color: #808080;
       }
       #register {
         width: 500px;
