@@ -238,7 +238,7 @@
 
               <div class="form-group">
                 <label for="Zip/ Postal Code" class="col-md-2">
-                  Address:
+                  Zip Code:
                 </label>
                 <div class="col-md-10">
                   <input name="Zip" type="text" class="form-control" id="Zip" placeholder="">
