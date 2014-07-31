@@ -9,7 +9,18 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
-<body>    
+<body> 
+	<?php   
+	if (isset($_GET['login_error']))
+	{
+		echo "<script>alert('Wrong ID and password')</script>";
+	}
+	if (isset($_GET['error']))
+	{
+		echo "<script>alert('Error in registering. Please try again')</script>";
+	}
+
+	?>   
 	<style type="text/css">
 		.carousel {
 			overflow: hidden;
@@ -185,7 +196,7 @@
 						<h4 class="modal-title" id="myModalLabel">Sign In to Citysynth</h4>
 					</div>
 					<div class="modal-body">
-						<form class="form-horizontal" role="form">
+						<form class="form-horizontal" role="form" method="post" action="add.php?entity=login" name="aform" target="_top">
 							<div class="form-group">
 								<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 								<div class="col-sm-10">
