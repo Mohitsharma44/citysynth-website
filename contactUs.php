@@ -20,8 +20,8 @@
   <div class="container">
     <div class="row">
       
-    <section class="span6">Left</section>
-    <section class="span6">Right</section>
+    <div class="span6">Left</div>
+    <div class="span6">Right</div>
     </div>
 
   </div>
