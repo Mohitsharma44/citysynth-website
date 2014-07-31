@@ -20,8 +20,8 @@
   <div class="container well">
 
     <div class="row">
-    <section class="col-xs-6">Left</section>
-    <section class="col-xs-6">Right</section>
+    <section class="span 6">Left</section>
+    <section class="span 6">Right</section>
     </div>
 
   </div>
