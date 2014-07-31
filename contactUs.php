@@ -6,8 +6,15 @@
   <title>CitySynth: Register</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style type="text/css">
+  body{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  </style>
 </head>
 <body>
   <div class="container">
