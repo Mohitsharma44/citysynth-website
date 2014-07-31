@@ -41,6 +41,7 @@
       #register {
         width: 500px;
         border: 1px;
+        float: left;
       }
       #signin{
         width: 100px;
