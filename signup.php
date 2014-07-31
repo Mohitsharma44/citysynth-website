@@ -34,7 +34,6 @@
         margin: 0;
       }
 
-
       p.italic {font-style:italic;float: left;}
 
     </style>
@@ -141,12 +140,6 @@
             </div>
           </div>
         </div>
-
-        <script type="text/javascript">
-          $(document).ready(function() {
-            $('.carousel').carousel({interval: 5000});
-          });
-        </script>
 
 
         <style type="text/css">
