@@ -48,7 +48,7 @@
         float: left;
       }
     </style>
-    <div id="wrapper">
+    <div id="wrapper" class="container">
       <div class="container" style="margin: 10px;" id="register">
         <div class="row"><h3>New Registration</h3>
         </div>
