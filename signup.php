@@ -187,7 +187,6 @@
           </div>
         </form>
       </div>
-    </div>
 
     <div class="container" style="margin: 10px; float:right; width: 50%;">
       <form class="form-horizontal" role="form">
