@@ -104,9 +104,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
   {
     ?>
 
-    <div style="width:48%;float:left" id="map-canvas">
+    <div style="width:48%;float:left" id="map-canvas" class="well">
     </div>
-    <div style="width:50%; height:100%;float:right" id="tp">
+    <div style="width:50%; height:100%;float:right" id="tp" class="well">
 
     </div> 
     <?php } ?>
