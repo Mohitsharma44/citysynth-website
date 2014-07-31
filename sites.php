@@ -96,7 +96,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<div id="map" class="well">
   <?php 
   if (!isset($_SESSION['user']))
     echo"<h2><a href='signup.php'>Login </a> to see the map</h2>";
@@ -104,12 +103,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
   {
     ?>
 
-    <div style="width:48%;float:left" id="map-canvas">
-    </div>
-    <div style="width:50%; height:100%;float:right" id="tp">
 
     </div> 
     <?php } ?>
-  </div>
 </body>
 </html>
