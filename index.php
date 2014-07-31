@@ -210,9 +210,7 @@
 							<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-10">
 								<button type="submit" class="btn btn-success">Sign in</button>
-								<a href="http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png"><button class="btn btn-primary dropdown-toggle">
-                        Register
-                    </button></a>
+								<a href="./signup.php"><button class="btn btn-primary dropdown-toggle">Register</button></a>
 								</div>
 							</div>
 						</form>
