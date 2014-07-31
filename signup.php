@@ -35,7 +35,7 @@
   <body>
     <style type="text/css">
       #wrapper{
-        width: 800px;
+        width: 1000px;
         border: 1px solid black;
       }
       #register {
@@ -44,7 +44,7 @@
         float: left;
       }
       #signin{
-        width: 100px;
+        width: 500px;
         border: 1px;
         float: left;
       }
