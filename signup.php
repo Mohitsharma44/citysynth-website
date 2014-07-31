@@ -113,7 +113,9 @@
     </div>
  
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-5">
         <button type="submit" class="btn btn-success">
           Register
         </button>
