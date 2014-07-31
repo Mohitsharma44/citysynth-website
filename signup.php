@@ -33,6 +33,7 @@
   </script>
 
   <body>
+  <div id="wrap">
   <div class="container" style="margin: 10px; width: 50%;">
       <div class="row"><h3>New Registration</h3>
       </div>
@@ -219,7 +220,7 @@
         </div>
       </form>
     </div>
-
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
 
