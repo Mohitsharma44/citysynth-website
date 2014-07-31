@@ -107,10 +107,8 @@
 						<li><a href="#">Contact Us</a></li>
 						<li>
 						<?php
-						if (isset($_SESSION['user'])){
-							echo "<a>Hello ".$_SESSION['user']."</a>";
-							echo "<a href="./logout.php">logout</a>";
-						}
+						if (isset($_SESSION['user']))
+							echo "<a>Hello ".$_SESSION['user']."</a>"."\n<a href='logout.php'>Logout</a>";
 						?>
 					</li>
 					</ul>
