@@ -65,7 +65,7 @@
       <label for="emailaddress" class="col-md-2">
         Email address:
       </label>
-      <div class="col-md-10">
+      <div class= "col-md-10">
         <input type="email" class="form-control" id="emailaddress" placeholder="Enter email address">
         <p class="help-block">
           Example: yourname@domain.com
@@ -84,8 +84,6 @@
         </p>
       </div>
  
- 
-    </div>
  
     </div>
  
@@ -111,7 +109,7 @@
           <input type="checkbox">Terms and Conditions</label>
       </div>
  
- 
+    </div>
     </div>
  
     <div class="row">
