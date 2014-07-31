@@ -37,10 +37,10 @@
       #wrapper{
         border: 1px 
         color: #808080;
-        overflow: hidden;
+        overflow: auto;
       }
       #register {
-        width: 700px;
+        width: 600px;
         border: 1px;
         float: left;
       }
