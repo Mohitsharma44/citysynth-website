@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CitySynth</title>
+  <title>CitySynth: Register</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -28,54 +28,12 @@
   <body>
 
     <style type="text/css">
-      .carousel {
-        overflow: hidden;
-      }
-      .carousel .item {
-        -webkit-transition: opacity 1s;
-        -moz-transition: opacity 1s;
-        -ms-transition: opacity 1s;
-        -o-transition: opacity 1s;
-        transition: opacity 1s;
-      }
-      .carousel .active.left, .carousel .active.right {
-        left:0;
-        opacity:0;
-        z-index:2;
-      }
-      .carousel .next, .carousel .prev {
-        left:0;
-        opacity:1;
-        z-index:1;
-      }
-
 
       div.c-wrapper{
         width: 80%; /* for example */
         margin: 0;
       }
 
-      .carousel-inner > .item > img, 
-      .carousel-inner > .item > a > img{
-        width: 100%; /* use this, or not */
-        margin: 0;
-      }
-
-      #myCarousel{
-        float:right;
-        width:65%;
-        overflow:hidden;
-      }
-
-      #text{
-        float:left;
-        width:35%;
-        overflow:hidden;
-      } 
-
-      .carousel-control.left, .carousel-control.right {
-        background-image: none;
-      }
 
       p.italic {font-style:italic;float: left;}
 
