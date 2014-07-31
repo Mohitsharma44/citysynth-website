@@ -24,6 +24,15 @@
  
   <form role="form" class="form-horizontal well">
     <div class="form-group">
+      <label for="sitename" class="col-md-2">
+        Sitename
+      </label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" id="sitename" placeholder="Enter Name for your site">
+      </div>
+    </div>
+
+    <div class="form-group">
       <label for="firstname" class="col-md-2">
         First Name:
       </label>
@@ -41,10 +50,17 @@
       <div class="col-md-10">
         <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
       </div>
- 
- 
     </div>
  
+    <div class="form-group">
+      <label for="address" class="col-md-2">
+        Address:
+      </label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" id="address" placeholder="Enter your address along with zip code">
+      </div>
+    </div>
+
     <div class="form-group">
       <label for="emailaddress" class="col-md-2">
         Email address:
@@ -55,8 +71,6 @@
           Example: yourname@domain.com
         </p>
       </div>
- 
- 
     </div>
  
     <div class="form-group">
@@ -72,42 +86,6 @@
  
  
     </div>
- 
-    <div class="form-group">
-      <label for="sex" class="col-md-2">
-        Sex:
-      </label>
-      <div class="col-md-10">
-        <label class="radio">
-          <input type="radio" name="sex" id="sex" value="male" checked>
-          Male
-        </label>
-        <label class="radio">
-          <input type="radio" name="sex" id="sex" value="female">
-          Female
-        </label>
-      </div>
- 
- 
-    </div>
- 
-    <div class="form-group">
-      <label for="country" class="col-md-2">
-        Country:
-      </label>
-      <div class="col-md-10">
-        <select name="country" id="country" class="form-control">
-          <option>--Please Select--</option>
-          <option>India</option>
-          <option>United States</option>
-          <option>Canada</option>
-          <option>United Kingdom</option>
-          <option>Others</option>
-        </select>
-      </div>
- 
- 
- 
  
     </div>
  
