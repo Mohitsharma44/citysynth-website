@@ -35,6 +35,7 @@
   <body>
     <style type="text/css">
       #wrapper{
+        width: 1500px
         border: 1px 
         color: #808080;
       }
