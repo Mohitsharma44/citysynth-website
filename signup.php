@@ -35,7 +35,6 @@
   <body>
     <style type="text/css">
       #wrapper{
-        width: 1000px;
         border: 1px solid black;
       }
       #register {
