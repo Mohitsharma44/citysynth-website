@@ -15,20 +15,33 @@
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
- 
   </head>
+
+  <script type="text/javascript">
+    function ValidateForm(frm) {
+if (frm.FirstName.value == "") {alert('First Name is required.');frm.FirstName.focus();return false;}
+if (frm.LastName.value == "") {alert('Last Name is required.');frm.LastName.focus();return false;}
+if (frm.Email.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.Email.value.indexOf("@") < 1 || frm.Email.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email.focus();return false;}
+if (frm.Address.value == "") {alert('Address is required.');frm.Address1.focus();return false;}
+if (frm.file.value == "") {alert('Image Upload is required.');frm.file.focus();return false;}
+if (frm.password.value == "") {alert('Password is required.');frm.password.focus();return false;}
+if (frm.site.value == "") {alert('Site Name is required.');frm.site.focus();return false;}
+return true; }
+  </script>
+
   <body>
     <div class="container" style="margin: 10px;">
-      <div class="row"><h2>New Registration</h2>
+      <div class="row"><h3>New Registration</h3>
   </div>
  
-  <form role="form" class="form-horizontal well">
+  <form action="add.php?entity=user" method="post" onsubmit="return ValidateForm(this);" enctype="multipart/form-data" role="form" class="form-horizontal well">
     <div class="form-group">
       <label for="sitename" class="col-md-2">
         Sitename
       </label>
       <div class="col-md-10">
-        <input type="text" class="form-control" id="sitename" placeholder="Enter Name for your site">
+        <input name="site" type="text" class="form-control" id="sitename" placeholder="Enter Name for your site">
       </div>
     </div>
 
@@ -37,7 +50,7 @@
         First Name:
       </label>
       <div class="col-md-10">
-        <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+        <input name="FirstName" type="text" class="form-control" id="firstname" placeholder="Enter First Name">
       </div>
  
  
@@ -48,7 +61,7 @@
         Last Name:
       </label>
       <div class="col-md-10">
-        <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+        <input name="LastName" type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
       </div>
     </div>
  
@@ -57,7 +70,7 @@
         Address:
       </label>
       <div class="col-md-10">
-        <input type="text" class="form-control" id="address" placeholder="Enter your address along with zip code">
+        <input name="Address" type="text" class="form-control" id="address" placeholder="Enter your address along with zip code">
       </div>
     </div>
 
@@ -66,7 +79,7 @@
         Email address:
       </label>
       <div class= "col-md-10">
-        <input type="email" class="form-control" id="emailaddress" placeholder="Enter email address">
+        <input name="Email" type="email" class="form-control" id="emailaddress" placeholder="Enter email address">
         <p class="help-block">
           Example: yourname@domain.com
         </p>
@@ -78,7 +91,7 @@
         Password:
       </label>
       <div class="col-md-10">
-        <input type="password" class="form-control" id="password" placeholder="Enter Password">
+        <input name="password" type="password" class="form-control" id="password" placeholder="Enter Password">
         <p class="help-block">
           Min: 6 characters (Alphanumeric only)
         </p>
@@ -92,7 +105,7 @@
         Upload Image:
       </label>
       <div class="col-md-10">
-        <input type="file" name="uploadimage" id="uploadimage">
+        <input name="file" type="file" name="uploadimage" id="uploadimage">
         <p class="help-block">
           Allowed formats: jpeg, jpg, gif, png
         </p>
