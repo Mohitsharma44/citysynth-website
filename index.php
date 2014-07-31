@@ -85,8 +85,8 @@
 
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
-					Welcome, 
 					<li>
+						Welcome,
 						<?php
 						if (isset($_SESSION['user']))
 							echo "<a>Hello ".$_SESSION['user']."</a>"."<a href='logout.php'>Logout</a>";
