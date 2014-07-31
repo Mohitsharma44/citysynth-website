@@ -109,7 +109,7 @@
 						<?php
 						if (isset($_SESSION['user']))
 							echo "<a>Hello ".$_SESSION['user']."</a>";
-							echo "<li><a href="/serv.cusp.nyu.edu/files/mohit/citysynth-website/logout.php">Contact Us</a></li>";
+							Echo "<a href="./logout.php">logout</a>";
 						?>
 					</li>
 					</ul>
