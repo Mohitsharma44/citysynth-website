@@ -94,7 +94,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <body>
 <?php 
 if (!isset($_SESSION['user']))
-echo"<h2><a href='sign up.php'>Login </a> to see the map</h2>";
+echo"<h2><a href='signup.php'>Login </a> to see the map</h2>";
 else
 {
 ?>

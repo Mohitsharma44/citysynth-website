@@ -16,7 +16,7 @@
     if (frm.LastName.value == "") {alert('Last Name is required.');frm.LastName.focus();return false;}
     if (frm.Email.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
     if (frm.Email.value.indexOf("@") < 1 || frm.Email.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email.focus();return false;}
-    if (frm.Address1.value == "") {alert('Address is required.');frm.Address1.focus();return false;}
+    if (frm.Address.value == "") {alert('Address is required.');frm.Address.focus();return false;}
     if (frm.City.value == "") {alert('City is required.');frm.City.focus();return false;}
     if (frm.file.value == "") {alert('Image Upload is required.');frm.City.focus();return false;}
     if (frm.Password.value == "") {alert('Password is required.');frm.Password.focus();return false;}
@@ -26,6 +26,19 @@
   </script>
 
   <body>
+
+    <?php   
+    if (isset($_GET['login_error']))
+    {
+      echo "<script>alert('Wrong ID and password')</script>";
+    }
+    if (isset($_GET['error']))
+    {
+      echo "<script>alert('Error in registering. Please try again')</script>";
+    }
+
+    ?>  
+
 
     <style type="text/css">
 
@@ -102,7 +115,7 @@
               <h4 class="modal-title" id="myModalLabel">Sign In to Citysynth</h4>
             </div>
             <div class="modal-body">
-              <form class="form-horizontal" role="form">
+              <form class="form-horizontal" role="form" method="post" action="add.php?entity=login" name="aform" target="_top">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                   <div class="col-sm-10">
