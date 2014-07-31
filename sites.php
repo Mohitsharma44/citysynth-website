@@ -212,7 +212,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
 
 
-      <div style="margin: 20px">
+      <div class="well">
         <?php 
         if (!isset($_SESSION['user']))
           echo"<h2><a href='signup.php'>Login </a> to see the map</h2>";
