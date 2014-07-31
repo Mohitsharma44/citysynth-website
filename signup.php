@@ -35,9 +35,9 @@
   <body>
     <style type="text/css">
       #wrapper{
-        width: 1500px
         border: 1px 
         color: #808080;
+        overflow: hidden;
       }
       #register {
         width: 700px;
