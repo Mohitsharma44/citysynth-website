@@ -105,12 +105,12 @@
 							<li><a href="#">Brooklyn</a></li>
 						</ul></li>
 						<li><a href="#">Contact Us</a></li>
-						<ul style="margin= 0px 0px 0px 50px">
+						<li>
 						<?php
 						if (isset($_SESSION['user']))
-							echo "<a>Hello ".$_SESSION['user']."</a>".",   <a href='logout.php'>Logout</a>";
+							echo "<a href='logout.php'>Logout ".$_SESSION['user']."</a>";
 						?>
-					</ui>
+					</li>
 					</ul>
 				</div>
 
