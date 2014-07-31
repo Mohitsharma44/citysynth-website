@@ -6,7 +6,7 @@
   </head>
   <body>
     
-  <form class="form-horizontal">
+  <form class="form-horizontal well">
     <div class="control-group">
       <label class="control-label" for="name">Name</label>
       <div class="controls">
