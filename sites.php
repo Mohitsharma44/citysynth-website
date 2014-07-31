@@ -103,8 +103,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
   {
     ?>
 
+    <div style="width:48%;float:left" id="map-canvas">
+    </div>
 
-    </div> 
     <?php } ?>
 </body>
 </html>
