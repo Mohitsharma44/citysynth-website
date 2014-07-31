@@ -67,7 +67,7 @@
               ?>
 
             </li>
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="./index.php">Home</a></li>
             <li><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
             <li class="dropdown">
               <a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Time Lapse Videos <b class="caret"></b></a>
@@ -87,7 +87,7 @@
         <div class = "container">
 
           <p class="navbar-text pull-left">Site Built by Mohit</p>
-          <a href = "./index.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
+          <a href = "./signup.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
 
         </div>
 
