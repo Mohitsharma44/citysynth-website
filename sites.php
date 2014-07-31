@@ -5,9 +5,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sites</title>
   <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="js/jquery.flexslider.js"></script>
   <script type="text/javascript" charset="utf-8">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
     $(window).load(function() {	  
       $('.flexslider').flexslider();	 
 
