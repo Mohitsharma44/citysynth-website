@@ -62,11 +62,6 @@
 
 		p.italic {font-style:italic;float: left;}
 
-		.myModal a{
-			color: #FFFFFF;
-			text-decoration: none;
-		}
-
 	</style>
 
 	<div class="navbar navbar-inverse default navbar-fixed-top">
@@ -118,7 +113,7 @@
 			<div class = "container">
 
 				<p class="navbar-text pull-left">Site Built by Mohit</p>
-				<a href = "#" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
+				<a href = "./index.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
 
 			</div>
 
@@ -216,7 +211,7 @@
 								<div class="col-sm-offset-2 col-sm-10">
 								<button type="submit" class="btn btn-success">Sign in</button>
 								<a href="http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png"><button class="btn btn-primary dropdown-toggle">
-                        <a href="./Signup.php>">Register</a>
+                        Register
                     </button></a>
 								</div>
 							</div>
