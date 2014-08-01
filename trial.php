@@ -237,7 +237,7 @@ if ($dir_handle > 1)
 
       
       var infowindow = new google.maps.InfoWindow({
-       content: '<a href="http://citysynth.info/slideshow/index.php"> Click for Slideshow</a>'
+       content: 'YES!!'
      });
 
 
