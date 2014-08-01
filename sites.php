@@ -233,7 +233,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         {
           ?>
 
-          <div style="width:75%;float:left" id="map-canvas">
+          <div style="width:45%;float:left" id="map-canvas">
           </div>
           <div style="width:55%; height:100%;float:right" id="tp">
 
