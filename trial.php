@@ -261,7 +261,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
     <li>
       <section id="two">
-        <div class="parallax-background map well" id="two">
+        <div class="parallax-background map container" id="two">
           <div id="map-canvas"></div>
         </div>
       </section>  
