@@ -28,6 +28,7 @@
 
     div#map-canvas {
      height: 600px;
+     width: 600px;
    }
 
 
