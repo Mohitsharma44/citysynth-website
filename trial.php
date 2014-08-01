@@ -245,7 +245,7 @@ if ($dir_handle > 1)
 
       google.maps.event.addListener(marker, 'click', function () {
         //infowindow.open(map, marker);
-        window.location.href = 'http://www.google.com';
+        window.location.href = '#myModal';
       });
 
     }
