@@ -14,9 +14,9 @@
 	<script type="text/javascript" charset="utf-8">
 		$(window).load(function() {	  
 			$('.flexslider').flexslider();	 
-			
+
 		}); 
-		
+
 		function imgError(image) {
 			image.onerror = "this.style.display = 'none'";
 			image.src = "images/uploads/trans.jpg";
@@ -29,27 +29,27 @@
 		div#map-canvas {
 			height: 540px;
 		}
-		
+
 
 
 	</style>
 	<script>
 
 		function initialize() {
-			
+
         //alert("End "+latitude[0]+" "+ window.longitude[0])
         var myLatlng = new google.maps.LatLng(﻿40.7401, -73.8407);
         var mapOptions = {
         	zoom: 10,
         	center: myLatlng
         };
-        
+
         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   latitude = new Array(); //myObject[numberline] = "textEachLine";
   longitude = new Array();
   <?php    $count = 1;   ?>
   $.get('myFile.txt', function(myContentFile) {
-  	var lines = myContentFile.split("\r\n");
+  	var lines = myContentFile.split("\n");
   	var n=m=0;
   	for(var i  in lines){
   		if(i%2==0)
@@ -63,14 +63,14 @@
 			_lat: tmpLat,
 			_lng: tmpLng,
 			_data: i
-			
+
 		});
 	}
 	  //
 	}
 }, 'text');		
-  
-  
+
+
 
 	//}
 }
