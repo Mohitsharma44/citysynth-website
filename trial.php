@@ -47,15 +47,15 @@
     }
 
     .parallax-background {
-      height:130%;
+      height:100%;
 
     }
     .map #map-canvas{
-      height:150%;
+      height:100%;
     }
   }
   .firstpage{
-    height:150%;
+    height:100%;
 
   }
 
