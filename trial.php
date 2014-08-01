@@ -226,7 +226,6 @@ if ($dir_handle > 1)
     
 
 
-
     function addMarker(lat,lon)
     {
       var ip_latlng =new google.maps.LatLng(lat,lon); 
@@ -239,7 +238,7 @@ if ($dir_handle > 1)
 
       
       var infowindow = new google.maps.InfoWindow({
-       content: window.location.href = "www.google.com";
+       content: window.open = 'www.google.com';
      });
 
 
