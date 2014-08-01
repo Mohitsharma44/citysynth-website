@@ -2,7 +2,9 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.css">
   <title>Parallax page</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
@@ -259,7 +261,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
     <li>
       <section id="two">
-        <div class="parallax-background map " id="two">
+        <div class="parallax-background map well" id="two">
           <div id="map-canvas"></div>
         </div>
       </section>  
