@@ -240,53 +240,7 @@ if ($dir_handle > 1)
 
       var infowindow = new google.maps.InfoWindow({
 
-       content: 
-    '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">'+
-      '<div class="modal-dialog">'+
-        '<div class="modal-content">'+
-          '<div class="modal-header">'+
-            '<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>'+
-            '<h4 class="modal-title" id="myModalLabel">Sign In to Citysynth</h4>'+
-          '</div>'+
-          '<div class="modal-body">'+
-            '<form class="form-horizontal" role="form" method="post" action="add.php?entity=login" name="aform" target="_top">'+
-              '<div class="form-group">'+
-                '<label for="inputEmail3" class="col-sm-2 control-label">Email</label>'+
-                '<div class="col-sm-10">'+
-                  '<input type="email" class="form-control" id="username" name="username" placeholder="Email">'+
-                '</div>'+
-              '</div>'+
-              '<div class="form-group">'+
-                '<label for="inputPassword3" class="col-sm-2 control-label">Password</label>'+
-                '<div class="col-sm-10">'+
-                  '<input type="password" class="form-control" id="password" name="password" placeholder="Password">'+
-                '</div>'+
-              '</div>'+
-              '<div class="form-group">'+
-                '<div class="col-sm-offset-2 col-sm-10">'+
-                  '<div class="checkbox">'+
-                    '<label>'+
-                      '<input type="checkbox"> Remember me'+
-                    '</label>'+
-                  '</div>'+
-                '</div>'+
-              '</div>'+
-              '<div class="form-group">'+
-                '<div class="col-sm-offset-2 col-sm-10">'+
-                  '<button type="submit" class="btn btn-success">Sign in</button>'+
-                  '<a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>'+
-                '</div>'+
-              '</div>'+
-            '</form>'+
-          '</div>'+
-          '<div class="modal-footer">'+
-            '<p class="italic">Signing in will give you access to the live feed <br/>from '+
-              'the cameras of other volunteers.</p>'+
-              '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>'+
-            '</div>'+
-          '</div>'+
-        '</div>'+
-      '</div>';
+       content: '<a data-toggle="modal" data-target="#myModal">Click me !</a>'
      });
 
 
@@ -316,7 +270,53 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   </ul>
 
-
+<!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sign In to Citysynth</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" role="form" method="post" action="add.php?entity=login" name="aform" target="_top">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="username" name="username" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-success">Sign in</button>
+                  <a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p class="italic">Signing in will give you access to the live feed <br/>from 
+              the cameras of other volunteers.</p>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 </body>
 </html>
