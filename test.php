@@ -1,5 +1,5 @@
 <?php
-		echo"<script>$('.flexslider').flexslider();</script>";
+		echo"<script>$('.flexslider').flexslider({slideshow: false});</script>";
 		$count=$_GET['count'];
 		$count=($count-1)/2+1;
 		$dir    = 'images/'.$count;
