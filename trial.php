@@ -252,30 +252,9 @@ if ($dir_handle > 1)
 google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body,nav').animate({
-            scrollTop: target.offset().top
-          }, 750);
-          return false;
-        }
-      }
-    });
-  });
-</script>
-
 </head>
 
 <body>
-  <nav><a href="#one">Home Page</a> <a href="#two">Google Maps</a>  </nav>
   <ul class="parallax">
 
     <li>
