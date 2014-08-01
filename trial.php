@@ -239,7 +239,7 @@ if ($dir_handle > 1)
 
       
       var infowindow = new google.maps.InfoWindow({
-       content: 'document.write('<iframe src="http://www.mywebsite.com/1.html"></iframe>');'
+       content: window.navigate("www.google.com")
      });
 
 
