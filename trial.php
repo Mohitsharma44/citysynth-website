@@ -240,7 +240,7 @@ if ($dir_handle > 1)
 
       var infowindow = new google.maps.InfoWindow({
 
-       content: '<a data-toggle="modal" data-target="#myModal">Click me !</a>'
+       content: '<a data-toggle="modal" href="#myModal" data-target="#myModal">Click me !</a>'
      });
 
 
