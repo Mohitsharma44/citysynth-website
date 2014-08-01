@@ -238,15 +238,17 @@ if ($dir_handle > 1)
         position: ip_latlng
       }); 
 
-      
+      var contentString = '<div id = "content>'+
+                             '<a href="#myModal" data-toggle="modal">Login/ Signup</a>'+
+                           '</div>';
+
       var infowindow = new google.maps.InfoWindow({
        content: 'YES!!'
      });
 
 
       google.maps.event.addListener(marker, 'click', function () {
-        //infowindow.open(map, marker);
-        $('#myModal').modal();
+        infowindow.open(map, marker);
       });
 
     }
@@ -274,7 +276,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   <!-- Modal -->
-    <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
