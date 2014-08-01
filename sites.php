@@ -223,7 +223,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
 
 
-      <div class="hero-unit" style="margin: 20px 0px 0px 0px">
+      <div class="hero-unit">
         <div class="well" style="margin: 20px 0px 0px 0px"
         <?php 
         if (!isset($_SESSION['user'])){ ?>
