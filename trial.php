@@ -45,7 +45,12 @@
       padding: 10px;
       z-index:1;
     }
-    
+
+    .map #map-canvas{
+      height:100%;
+    }
+  }
+
 </style>
 
 <?php
