@@ -246,7 +246,7 @@ if ($dir_handle > 1)
 
       google.maps.event.addListener(marker, 'click', function () {
         //infowindow.open(map, marker);
-        window.location.href = '#myModal';
+        $('#myModal').modal();
       });
 
     }
@@ -322,6 +322,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
 
 
-  
+
 </body>
 </html>
