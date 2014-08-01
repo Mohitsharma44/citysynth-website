@@ -27,7 +27,7 @@
   <style>
 
     div#map-canvas {
-     height: 100%;
+     height: 540px;
    }
 
 
