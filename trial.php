@@ -46,9 +46,17 @@
       z-index:1;
     }
 
-    .map #map-canvas{
-      height:100%;
+    .parallax-background {
+      height:130%;
+
     }
+    .map #map-canvas{
+      height:150%;
+    }
+  }
+  .firstpage{
+    height:150%;
+
   }
 
 </style>
