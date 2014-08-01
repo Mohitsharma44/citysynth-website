@@ -243,7 +243,7 @@ if ($dir_handle > 1)
                            '</div>';
 
       var infowindow = new google.maps.InfoWindow({
-       content: 'YES!!'
+       content: 'contentString'
      });
 
 
