@@ -28,7 +28,6 @@
 
     div#map-canvas {
      height: 600px;
-     width: 600px;
    }
 
 
@@ -224,7 +223,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
 
 
-      <div class="container" style="margin: 20px 0px 0px 0px">
+      <div class="hero-unit" style="margin: 20px 0px 0px 0px">
         <?php 
         if (!isset($_SESSION['user'])){ ?>
         <h2><a href="#myModal" data-toggle="modal">Login </a> to see the map</h2>
