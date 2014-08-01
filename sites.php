@@ -229,17 +229,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
         if (!isset($_SESSION['user'])){ ?>
         <h2><a href="#myModal" data-toggle="modal">Login </a> to see the map</h2>
         <?php }
+
         else
         {
           ?>
-
+        </div>
           <div style="width:45%;float:left" id="map-canvas">
           </div>
           <div style="width:55%; height:100%;float:right" id="tp">
 
           </div> 
           <?php } ?>
-          </div>
         </div>
       </body>
       </html>
