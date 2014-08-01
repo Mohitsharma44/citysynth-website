@@ -239,7 +239,7 @@ if ($dir_handle > 1)
       }); 
 
       var infowindow = new google.maps.InfoWindow({
-       content: '<a href="#myModal" data-toggle="modal">Login/ Signup</a>'
+       content: '<a href="#myModal">Login/ Signup</a>'
      });
 
 
