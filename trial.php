@@ -238,10 +238,8 @@ if ($dir_handle > 1)
         position: ip_latlng
       }); 
 
-      var contentString = '<a href="#myModal" data-toggle="modal">Login/ Signup</a>'+
-
       var infowindow = new google.maps.InfoWindow({
-       content: contentString
+       content: '<a href="#myModal" data-toggle="modal">Login/ Signup</a>'
      });
 
 
