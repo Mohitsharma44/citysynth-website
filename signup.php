@@ -283,7 +283,7 @@
                   Upload Image:
                 </label>
                 <div class="col-md-10">
-                  <input name="file" type="file" name="file" id="file" accept="image/*">
+                  <input name="file" type="file" id="file" accept="image/*">
                   <p class="help-block">
                     Allowed formats: jpeg, jpg, gif, png
                   </p>
@@ -316,7 +316,7 @@
                   <div class="col-md-2">
                   </div>
                   <div class="col-md-10">
-                    <button type="submit" class="btn btn-success">
+                    <button type="submit" name="skip_submit" id="skip_submit" value="submit" class="btn btn-success">
                       Register
                     </button>
                   </div>
