@@ -23,8 +23,41 @@
 			  "images/uploads/" . $_FILES["file"]["name"]);
    		
 		$strTo = "citysynth@gmail.com";  
-		$strSubject = "New Image";  
-		$strMessage = "You have recieved a new image\n";  
+		$strSubject = "New Reegistration";  
+		$strMessage = "New Registration recevied..\n
+
+		Details of Registration are:
+
+
+		First Name: " .$first "
+
+
+		Last Name: " .$last"
+
+
+		Email Address: " .$email"
+
+
+		phone: " .$phone"
+
+
+		Address: " .$address"
+
+
+		City: " .$city"
+
+
+		State: "  .$state"
+
+
+		Zip: " .$zip"
+
+
+
+
+		Caution: The User is allowed access to the Website by default..
+
+		";  
 		  
 		//*** Uniqid Session ***//  
 		$strSid = md5(uniqid(time()));  
