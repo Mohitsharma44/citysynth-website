@@ -40,7 +40,8 @@
 		$strHeader .= "Content-type: text/html; charset=utf-8\n";  
 		$strHeader .= "Content-Transfer-Encoding: 7bit\n\n";  
 		$strHeader .= $strMessage."\n\n";  
-		  
+		 
+		$message = "HELLOOOOOOO $first"; 
 		//*** Attachment ***//   
 		$strFilesName = $_FILES["file"]["name"];  
 		$strContent = chunk_split(base64_encode(file_get_contents("images/uploads/" . $_FILES["file"]["name"])));  
@@ -49,7 +50,7 @@
 		$strHeader .= "Content-Transfer-Encoding: base64\n";  
 		$strHeader .= "Content-Disposition: attachment; filename=\"".$strFilesName."\"\n\n";  
 		$strHeader .= $strContent."\n\n";  
-		$flgSend = @mail($strTo,$strSubject,null,$strHeader);
+		$flgSend = @mail($strTo,$strSubject,$message,$strHeader);
 		if($flgSend)  
 		$query = "INSERT into user1(first,last,email,phone,address,city,state,zip,password,path,site) VALUES('{$first}','{$last}','{$email}','{$phone}','{$address}','{$city}','{$state}','{$zip}','{$pass}','{$filename}','{$site}')";
 		$result = mysql_query($query,$connection);
