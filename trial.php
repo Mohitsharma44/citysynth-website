@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
   <title>Parallax page</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
   <link href="styles.css" rel="stylesheet">
   <style type="text/css">
     html,body{
       margin:0px;
       padding:0;
-      height:160%;
+      height:100%;
     }
     section{
       display: block;
@@ -58,7 +60,7 @@
     }
   }
   .firstpage{
-    height:100%;
+    height:50%;
 
   }
 
@@ -176,7 +178,7 @@ if ($dir_handle > 1)
 
      var mapOptions = {
       zoom: 14,
-      scrollwheel: false,
+      scrollwheel: true,
       center: latlng,
       mapTypeControl: true,
       mapTypeControlOptions: {
@@ -193,7 +195,7 @@ if ($dir_handle > 1)
       streetViewControlOptions: {
         position: google.maps.ControlPosition.RIGHT_TOP
       },
-      panControl: false,
+      panControl: true,
 
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -240,7 +242,7 @@ if ($dir_handle > 1)
 
       var infowindow = new google.maps.InfoWindow({
 
-       content: '<a data-toggle="modal" href="#myModal" data-target="#myModal">Click me !</a>'
+       content: '<a href="#myModal" data-toggle="modal">Login/ Signup</a>'
      });
 
 
@@ -261,14 +263,78 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <ul class="parallax">
 
     <li>
-      <section id="two">
-        <div class="parallax-background map container-fluid" id="two">
+      <section id="one">
+        <div class="parallax-background map container-fluid" id="one">
           <div id="map-canvas"></div>
         </div>
       </section>  
     </li>
 
   </ul>
+
+   <style type="text/css">
+
+    div.c-wrapper{
+      width: 80%; /* for example */
+      margin: 0;
+    }
+
+    p.italic {font-style:italic;float: left;}
+
+  </style>
+
+  <div class="navbar navbar-inverse default navbar-fixed-top">
+    <!--If the top bar moves, change static to fixed and at the end of this dic class, adjust the next div class with some padding-->
+    <style type="text/css">
+      p{
+        margin: 0px 0px 0px 0px;
+      }
+      div{
+        margin: 0px 0px 0px 0px;
+      }
+    </style>
+    <div class="container">
+      <a href="./index.php" class="navbar-brand"><p style="font-size: 22px;font-weight: 500;font-family: 'Open Sans', sans-serif; align="left" ">CITYSYNTH</br></p><p style="font-size:12px; align="left" ">&nbsp;THE URBAN GALAXY</p></a>
+      <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+        <span class = icon-bar></span>
+        <span class = icon-bar></span>
+        <span class = icon-bar></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.php">Home</a></li>
+          <li><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
+          <li class="active"><a href="./sites.php">Live Feed</a></li>
+          <li class="dropdown">
+            <a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Time Lapse Videos <b class="caret"></b></a>
+            <ul class = "dropdown-menu">
+              <li><a href="video.php">Manhattan</a></li>
+            </ul></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+              <?php
+              if (isset($_SESSION['user']))
+                echo "<a href='logout.php'>Logout ".$_SESSION['user']."</a>";
+              ?>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div> 
+
+    <div class = "navbar navbar-default navbar-fixed-bottom">
+
+      <div class = "container">
+
+        <p class="navbar-text pull-left">Site Built by Mohit</p>
+        <a href = "./signup.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
+
+      </div>
+
+    </div>
 
 <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
