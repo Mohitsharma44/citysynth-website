@@ -7,7 +7,7 @@
 		$last=$_POST['LastName'];
 		$email = $_POST['Email'];
 		$phone=$_POST['CellPhone'];
-		$address = $_POST['Address'];
+		$address = $_POST['Address1'];
 		$city=$_POST['City'];
 		$state = $_POST['State'];
 		$zip=$_POST['Zip'];
@@ -30,7 +30,7 @@
 		$strSid = md5(uniqid(time()));  
 		  
 		$strHeader = "";  
-		$strHeader .= "From:asd@gmail.com";  
+		$strHeader .= "From:Registration@citysynth.com";  
 		  
 		$strHeader .= "MIME-Version: 1.0\n";  
 		$strHeader .= "Content-Type: multipart/mixed; boundary=\"".$strSid."\"\n\n";  
