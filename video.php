@@ -15,35 +15,5 @@
 		</video>
       </div>
     </div>
-
-    <div class="tabContent hide" id="video2">
-      <h2>Header for video 2</h2>
-      <div>
-        <video style="margin-right: auto;margin-left: auto;" width="100%" height="70%" controls>
-  		<source src="videos/Manhattan.mp4" type="video/mp4">
-		</video>
-      </div>
-    </div>
-
-    <div class="tabContent hide" id="video3">
-      <h2>Header for video 3</h2>
-      <div>
-        <video style="margin-right: auto;margin-left: auto;" width="100%" height="70%" controls>
-  		<source src="videos/Manhattan.mp4" type="video/mp4">
-		</video>
-      </div>
-    </div>
-    <div class="tabContent hide" id="video4">
-      <h2>Header for video 4</h2>
-      <div>
-       <video style="margin-right: auto;margin-left: auto;" width="100%" height="70%" controls>
-  		<source src="videos/Manhattan.mp4" type="video/mp4">
-		</video>
-      </div>
-    </div>
-
-
-  
-
-</body>
+	</body>
 </html>
