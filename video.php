@@ -71,8 +71,8 @@
                         </video>
                     </div>
         </div>
-        <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.video-ui.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.video-ui.js"></script>
         <script type="text/javascript" >
             $('#demo1').videoUI();
         </script>
