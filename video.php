@@ -10,6 +10,11 @@
 	<script src="js/jquery.flexslider.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/bootstrap.min.js"></script>
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/video-default.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.video-ui.js"></script>
+
 </head>
 
 <body>
@@ -138,5 +143,13 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="videoUiWrapper thumbnail">
+  <video width="480" height="400" id="demo">
+    <source src="videos/Manhattan.mp4" type="video/mp4">
+    Your browser does not support the video tag. 
+  </video>
+</div>
+
 		</body>
 		</html>
