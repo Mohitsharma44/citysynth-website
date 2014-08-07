@@ -1,10 +1,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
     <!-- This page is copyright Elated Communications Ltd. (www.elated.com) -->
 
-    <title>Timelapse Videos</title>
+    <title>Timelapse Videos</title>	
    
   </head>
-  <body>
+  <body bgcolor="#ecf0f1">
     <div class="tabContent" id="video1">
       <h2>Manhattan Timelapse</h2>
       <div>
