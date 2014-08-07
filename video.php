@@ -19,7 +19,10 @@
         <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.video-ui.js"></script>
         <script type="text/javascript" >
-            $('#demo1').videoUI({'autoplay' : true, 'playMedia' : true});
+            $('#demo1').videoUI({'autoplay' : true, 
+            	'playMedia' : true,
+            	'autohide' : false,
+            });
         </script>
     </body>
 </html>
