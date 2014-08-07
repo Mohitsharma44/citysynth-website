@@ -142,7 +142,7 @@
     <div class="tabContent well" id="video1">
       <h2>Manhattan Timelapse</h2>
       <div>
-        <video style="margin-right: auto;margin-left: auto;" width="70%" controls>
+        <video style="margin-right: auto;margin-left: auto;" width="65%" controls>
   		<source src="videos/Manhattan.mp4" type="video/mp4">
 		</video>
       </div>
