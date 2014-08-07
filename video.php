@@ -11,7 +11,7 @@
     </head>
     <body>
     <div class="videoUiWrapper thumbnail">
-  <video width="370" height="214" id="demo1">
+  <video width="540" height="420" id="demo1">
     <source src="videos/Manhattan.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
