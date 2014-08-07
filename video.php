@@ -1,155 +1,135 @@
-<?php include_once('login.php');?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Sites</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<script src="js/bootstrap.min.js"></script>
-	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/video-default.css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.video-ui.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bootstrap video player</title>
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/video-default.css" rel="stylesheet">
+        <style>
+            body{padding-top: 10px}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Bootstrap video player</h1>
+                <p>A customizable HTML5 video player plugin for jQuery based on bootstrap UI</p>
+                <p>
+                    <small>Current version: 1.0<br/>
+                        Tested in: jQuery 1.6+ in Firefox, Safari, Chrome, Internet Explorer 9, Opera 11.
+                    </small>
+                </p>
+            </div>
+            <div class="row">
+                <div class="span7">
+                    <h2>Getting started </h2>
+                    <h3>files to includes</h3>
+                     <div class="row">
+                    <code class="pull-left span6">
+                        &lt;link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;<br/>
+                        &lt;link href="assets/css/video-default.css" rel="stylesheet"&gt;<br/>
+                        &lt;script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"&gt;&lt;/script&gt;<br/>
+                        &lt;script type="text/javascript" src="assets/js/jquery.video-ui.js"&gt;&lt;/script&gt;<br/>
+                    </code>
+                     </div>
+                    <h3>HTML markup structure</h3>
+                    <div class="row">
+                        <code class="pull-left span6">
 
-</head>
+                            &lt;div class="videoUiWrapper thumbnail"&gt;<br/>
+                            &nbsp;&nbsp;&lt;video width="370" height="214"  id="demo1"&gt;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="pathtovideo/video.ogv" type="video/ogg"&gt; <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="pathtovideo/video.mp4" type="video/mp4"&gt;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Your browser does not support the video tag.<br/>
+                            &nbsp;&nbsp;&lt;/video&gt;<br/>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                    <h3>Default setup Bootstrap video player</h3>
+                    <div class="row">
+                        <code class="pull-left span6">
+                            $('#demo1').videoUI();
+                        </code>
+                    </div>
+                    <h3>Setup with some option</h3>
+                    <div class="row">
+                        <code class="pull-left span6">
+                            $('#demo1').videoUI({<br/>
+                            &nbsp;&nbsp;'autoHide':false,<br/>
+                            &nbsp;&nbsp;'volumeMedia': 1<br/>
+                            });
+                        </code>
+                    </div>
+                </div>
+                <div class="span5">
+                    <h2>Default setup demo</h2>
+                    <div class="videoUiWrapper thumbnail">
+                        <video width="370" height="214"  id="demo1">
+                            <source src="http://ia700305.us.archive.org/18/items/CopyingIsNotTheft/CINT_Nik_H264_720.ogv" type="video/ogg"> 
+                            <source src="http://ia700305.us.archive.org/18/items/CopyingIsNotTheft/CINT_Nik_H264_720_512kb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h2>Settings</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>playMedia</td>
+                                <td>true</td>
+                                <td>show pause/play button</td>
+                            </tr>
+                            <tr>
+                                <td>progressMedia</td>
+                                <td>true</td>
+                                <td>show progress bar</td>
+                            </tr>
+                            <tr>
+                                <td>timerMedia</td>
+                                <td>true</td>
+                                <td>show video timer</td>
+                            </tr>
+                            <tr>
+                                <td>volumeMedia</td>
+                                <td>5</td>
+                                <td>show & set volume value 1..10 </td>
+                            </tr>
+                            <tr>
+                                <td>fullscreenMedia</td>
+                                <td>true</td>
+                                <td>enable full screen button</td>
+                            </tr>
+                            <tr>
+                                <td>autoHide</td>
+                                <td>true</td>
+                                <td>enable auto hide control bar</td>
+                            </tr>
+                            <tr>
+                                <td>autoPlay</td>
+                                <td>false</td>
+                                <td>enable auto play</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr/>
+            <footer>
+                <p>follow us on twitter <a href="https://twitter.com/html5_ninja">@html5_ninja</a>, on <a href="https://www.facebook.com/Html5Ninja">Facebook</a> & on <a href="https://plus.google.com/107385672780395752994">Google+</a></p>
+                <p>Author: zied.hosni.mail@gmail.com <span class="pull-right">2012 &copy; <a href="http://html5-ninja.com/">html5-ninja.com</a></span></p>
 
-<body>
-
-	<?php   
-	if (isset($_GET['login_error']))
-	{
-		echo "<script>alert('Wrong ID and password')</script>";
-	}
-	if (isset($_GET['error']))
-	{
-		echo "<script>alert('Error in registering. Please try again')</script>";
-	}
-
-	?> 
-
-	<style type="text/css">
-
-		div.c-wrapper{
-			width: 80%; /* for example */
-			margin: 0;
-		}
-
-		p.italic {font-style:italic;float: left;}
-
-	</style>
-
-	<div class="navbar navbar-inverse default navbar-fixed-top">
-		<!--If the top bar moves, change static to fixed and at the end of this dic class, adjust the next div class with some padding-->
-		<style type="text/css">
-			p{
-				margin: 0px 0px 0px 0px;
-			}
-			div{
-				margin: 0px 0px 0px 0px;
-			}
-		</style>
-		<div class="container">
-			<a href="./index.php" class="navbar-brand"><p style="font-size: 22px;font-weight: 500;font-family: 'Open Sans', sans-serif; align="left" ">CITYSYNTH</br></p><p style="font-size:12px; align="left" ">&nbsp;THE URBAN GALAXY</p></a>
-			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-				<span class = icon-bar></span>
-				<span class = icon-bar></span>
-				<span class = icon-bar></span>
-			</button>
-
-
-			<div class="collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="./index.php">Home</a></li>
-					<li><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
-					<li class="active"><a href="./sites.php">Live Feed</a></li>
-					<li class="dropdown">
-						<a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Time Lapse Videos <b class="caret"></b></a>
-						<ul class = "dropdown-menu">
-							<li><a href="#">Manhattan</a></li>
-							<li><a href="#">Brooklyn</a></li>
-						</ul></li>
-						<li><a href="#">Contact Us</a></li>
-						<li>
-							<?php
-							if (isset($_SESSION['user']))
-								echo "<a href='logout.php'>Logout ".$_SESSION['user']."</a>";
-							?>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-		</div> 
-
-		<div class = "navbar navbar-default navbar-fixed-bottom">
-
-			<div class = "container">
-
-				<p class="navbar-text pull-left">Site Built by Mohit</p>
-				<a href = "./signup.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
-
-			</div>
-
-		</div>
-
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						<h4 class="modal-title" id="myModalLabel">Sign In to Citysynth</h4>
-					</div>
-					<div class="modal-body">
-						<form class="form-horizontal" role="form" method="post" action="add.php?entity=login" name="aform" target="_top">
-							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-								<div class="col-sm-10">
-									<input type="email" class="form-control" id="username" name="username" placeholder="Email">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control" id="password" name="password" placeholder="Password">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox"> Remember me
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
-									<button type="submit" class="btn btn-success">Sign in</button>
-									<a href = "./signup.php" class="navbar-btn btn btn-primary">Register</a>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<p class="italic">Signing in will give you access to the live feed <br/>from 
-							the cameras of other volunteers.</p>
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="videoUiWrapper thumbnail">
-  <video width="480" height="400" id="demo">
-    <source src="videos/Manhattan.mp4" type="video/mp4">
-    Your browser does not support the video tag. 
-  </video>
-</div>
-
-		</body>
-		</html>
+            </footer>
+        </div>
+        <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.video-ui.js"></script>
+        <script type="text/javascript" >
+            $('#demo1').videoUI();
+        </script>
+    </body>
+</html>
