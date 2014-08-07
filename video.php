@@ -60,8 +60,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="./index.php">Home</a></li>
           <li><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
-          <li class="active"><a href="./sites.php">Live Feed</a></li>
-          <li class="dropdown">
+          <li><a href="./sites.php">Live Feed</a></li>
+          <li class="active dropdown">
             <a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Time Lapse Videos <b class="caret"></b></a>
             <ul class = "dropdown-menu">
               <li><a href="#">Manhattan</a></li>
