@@ -12,8 +12,7 @@
     <body>
     <div class="videoUiWrapper thumbnail">
   <video width="370" height="214" id="demo1">
-    <source src="pathtovideo/video.ogv" type="video/ogg"> 
-    <source src="pathtovideo/video.mp4" type="video/mp4">
+    <source src="videos/Manhattan.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
