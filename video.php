@@ -70,61 +70,6 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h2>Settings</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Property</th>
-                                <th>Default</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>playMedia</td>
-                                <td>true</td>
-                                <td>show pause/play button</td>
-                            </tr>
-                            <tr>
-                                <td>progressMedia</td>
-                                <td>true</td>
-                                <td>show progress bar</td>
-                            </tr>
-                            <tr>
-                                <td>timerMedia</td>
-                                <td>true</td>
-                                <td>show video timer</td>
-                            </tr>
-                            <tr>
-                                <td>volumeMedia</td>
-                                <td>5</td>
-                                <td>show & set volume value 1..10 </td>
-                            </tr>
-                            <tr>
-                                <td>fullscreenMedia</td>
-                                <td>true</td>
-                                <td>enable full screen button</td>
-                            </tr>
-                            <tr>
-                                <td>autoHide</td>
-                                <td>true</td>
-                                <td>enable auto hide control bar</td>
-                            </tr>
-                            <tr>
-                                <td>autoPlay</td>
-                                <td>false</td>
-                                <td>enable auto play</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <hr/>
-            <footer>
-                <p>follow us on twitter <a href="https://twitter.com/html5_ninja">@html5_ninja</a>, on <a href="https://www.facebook.com/Html5Ninja">Facebook</a> & on <a href="https://plus.google.com/107385672780395752994">Google+</a></p>
-                <p>Author: zied.hosni.mail@gmail.com <span class="pull-right">2012 &copy; <a href="http://html5-ninja.com/">html5-ninja.com</a></span></p>
-
-            </footer>
         </div>
         <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.video-ui.js"></script>
