@@ -82,7 +82,7 @@
 		$strHeader .= "Content-Transfer-Encoding: base64\n";  
 		$strHeader .= "Content-Disposition: attachment; filename=\"".$strFilesName."\"\n\n";  
 		$strHeader .= $strContent."\n\n";  
-		$flgSend = @mail($strTo,$strSubject,null,$strHeader);
+		$flgSend = @mail($strTo,$strSubject,$strMessage,$strHeader);
 		if($flgSend)  
 		$query = "INSERT into user1(first,last,email,phone,address,city,state,zip,password,path,site) VALUES('{$first}','{$last}','{$email}','{$phone}','{$address}','{$city}','{$state}','{$zip}','{$pass}','{$filename}','{$site}')";
 		$result = mysql_query($query,$connection);
