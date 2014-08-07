@@ -24,7 +24,9 @@
    		
 		$strTo = "citysynth@gmail.com";  
 		$strSubject = "New Registration";  
-		$strMessage = "New Registration recevied.. $first\n";  
+		$strMessage = "New Registration recevied.. \r\nName: $first    $last\r\n
+		Phone: $phone\r\nEmail: $email \r\nAddress: $address \r\nCity: $city\r\n
+		State: $state\r\nZip: $zip\r\nSite name: $site\r\n";  
 		  
 		//*** Uniqid Session ***//  
 		$strSid = md5(uniqid(time()));  
