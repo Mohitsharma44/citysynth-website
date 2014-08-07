@@ -2,8 +2,6 @@
     <!-- This page is copyright Elated Communications Ltd. (www.elated.com) -->
 
     <title>Timelapse Videos</title>
-
-<link rel="stylesheet" href="css/flexslider.css" type="text/css">
    
   </head>
   <body>
