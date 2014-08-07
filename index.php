@@ -102,8 +102,7 @@
 					<li class="dropdown">
 						<a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Time Lapse Videos <b class="caret"></b></a>
 						<ul class = "dropdown-menu">
-							<li><a href="#">Manhattan</a></li>
-							<li><a href="#">Brooklyn</a></li>
+							<li><a href="video.php">Manhattan</a></li>
 						</ul></li>
 						<li><a href="#">Contact Us</a></li>
 						<li>
