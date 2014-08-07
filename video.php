@@ -1,4 +1,3 @@
-<?php include_once('login.php');?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -13,18 +12,6 @@
 </head>
 
  <body background="#ecf0f1">
-
-  <?php   
-  if (isset($_GET['login_error']))
-  {
-    echo "<script>alert('Wrong ID and password')</script>";
-  }
-  if (isset($_GET['error']))
-  {
-    echo "<script>alert('Error in registering. Please try again')</script>";
-  }
-
-  ?> 
 
   <style type="text/css">
 
