@@ -283,7 +283,7 @@
                   Upload Image:
                 </label>
                 <div class="col-md-10">
-                  <input name="file" type="file" name="file" id="file">
+                  <input name="file" type="file" name="file" id="file" accept="image/*">
                   <p class="help-block">
                     Allowed formats: jpeg, jpg, gif, png
                   </p>
