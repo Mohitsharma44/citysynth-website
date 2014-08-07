@@ -23,41 +23,8 @@
 			  "images/uploads/" . $_FILES["file"]["name"]);
    		
 		$strTo = "citysynth@gmail.com";  
-		$strSubject = "New Reegistration";  
-		$strMessage = "New Registration recevied..\n
-
-		Details of Registration are:
-
-
-		First Name: " .$first "
-
-
-		Last Name: " .$last"
-
-
-		Email Address: " .$email"
-
-
-		phone: " .$phone"
-
-
-		Address: " .$address"
-
-
-		City: " .$city"
-
-
-		State: "  .$state"
-
-
-		Zip: " .$zip"
-
-
-
-
-		Caution: The User is allowed access to the Website by default..
-
-		";  
+		$strSubject = "New Registration";  
+		$strMessage = "New Registration recevied..\n";  
 		  
 		//*** Uniqid Session ***//  
 		$strSid = md5(uniqid(time()));  
@@ -82,7 +49,7 @@
 		$strHeader .= "Content-Transfer-Encoding: base64\n";  
 		$strHeader .= "Content-Disposition: attachment; filename=\"".$strFilesName."\"\n\n";  
 		$strHeader .= $strContent."\n\n";  
-		$flgSend = @mail($strTo,$strSubject,$strMessage,$strHeader);
+		$flgSend = @mail($strTo,$strSubject,null,$strHeader);
 		if($flgSend)  
 		$query = "INSERT into user1(first,last,email,phone,address,city,state,zip,password,path,site) VALUES('{$first}','{$last}','{$email}','{$phone}','{$address}','{$city}','{$state}','{$zip}','{$pass}','{$filename}','{$site}')";
 		$result = mysql_query($query,$connection);
