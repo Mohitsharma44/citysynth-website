@@ -1,3 +1,4 @@
+<?php include_once('login.php');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,14 +66,14 @@
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="./index.php">Home</a></li>
-            <li class="active"><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
+            <li><a href="#myModal" data-toggle="modal">Login/ Signup</a></li>
             <li><a href="./sites.php">Live Feed</a></li>
             <li class="dropdown">
               <a href="#" class = "dropdown-toggle" data-toggle = "dropdown">Time Lapse Videos <b class="caret"></b></a>
               <ul class = "dropdown-menu">
                 <li><a href="video.php">Manhattan</a></li>
               </ul></li>
-              <li><a href="./contact-form.php">Contact Us</a></li>
+              <li class="active"><a href="./contact-form.php">Contact Us</a></li>
               <li>
             <?php
             if (isset($_SESSION['user']))
@@ -164,7 +165,7 @@
         </style>
 
         <div class="container" style="margin: 20px 150px">
-	
+    
         <div class="page-header">
             <h1>Contact Us</h1>
         </div>

@@ -104,7 +104,7 @@
 						<ul class = "dropdown-menu">
 							<li><a href="video.php">Manhattan</a></li>
 						</ul></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="./contact-form.php">Contact Us</a></li>
 						<li>
 						<?php
 						if (isset($_SESSION['user']))
