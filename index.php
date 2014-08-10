@@ -22,6 +22,16 @@
 
 	?>   
 	<style type="text/css">
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body p {
+            font-style: italic;
+            font-weight: 300; /* You specify the number you see next to the fonts to change from light to bold ie you would put 700 etc. etc. */
+        }
+	
 		.carousel {
 			overflow: hidden;
 		}
@@ -180,7 +190,7 @@
 		</div>
 
 		<div id="text">
-			<p></br></br></br>
+			<p></br></br></br></br></br></br></br>
 			A crowd sourced project of multi-perspective views of New York's urban landscape. 
 			Together we will synthesize 4-dimensional perspective of New York city. The data being obtained from this art and science project will be available to all the contributors.
 			Interested in joining the group? Great.. Register with us! We will get back to you soon!
