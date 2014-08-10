@@ -9,7 +9,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
-<body> 
+<body background="#ecf0f1" !important;> 
 	<?php   
 	if (isset($_GET['login_error']))
 	{
@@ -22,16 +22,17 @@
 
 	?>   
 	<style type="text/css">
-		@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+		@import url(http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:600);
         body {
             font-family: 'Open Sans', sans-serif;
+            font-size: 15px
         }
 
         body p {
-            font-style: italic;
-            font-weight: 300; /* You specify the number you see next to the fonts to change from light to bold ie you would put 700 etc. etc. */
+            font-weight: 500; /* You specify the number you see next to the fonts to change from light to bold ie you would put 700 etc. etc. */
+        
         }
-	
+
 		.carousel {
 			overflow: hidden;
 		}
@@ -75,6 +76,8 @@
 			float:left;
 			width:35%;
 			overflow:hidden;
+        	font-size: 18px;
+        	word-spacing: 5px
 		} 
 
 		.carousel-control.left, .carousel-control.right {
@@ -154,7 +157,7 @@
 
 					<img src="img/a.jpg" alt = "Error..a.." class="img-resposive">
 					<div class="carousel-caption">
-						<h3>Something on Image 1</h3>
+						<h3></h3>
 					</div>
 
 				</div>
@@ -163,7 +166,7 @@
 
 					<img src="img/b.jpg" alt = "Error..b.." class="img-resposive">
 					<div class="carousel-caption">
-						<h3>Something on Image 2</h3>
+						<h3></h3>
 					</div>
 				</div>
 
@@ -171,7 +174,7 @@
 
 					<img src="img/c.jpg" alt = "Error..c.." class="img-resposive">
 					<div class="carousel-caption">
-						<h3>Something on Image 3</h3>
+						<h3></h3>
 					</div>
 
 				</div>	
@@ -190,7 +193,7 @@
 		</div>
 
 		<div id="text">
-			<p></br></br></br></br></br></br></br>
+			<p></br></br></br></br></br></br></br></br>
 			A crowd sourced project of multi-perspective views of New York's urban landscape. 
 			Together we will synthesize 4-dimensional perspective of New York city. The data being obtained from this art and science project will be available to all the contributors.
 			Interested in joining the group? Great.. Register with us! We will get back to you soon!
