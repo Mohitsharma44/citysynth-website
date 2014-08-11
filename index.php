@@ -135,7 +135,7 @@
 
 			<div class = "container">
 
-				<p class="navbar-text pull-left">Site Built by Mohit</p>
+				<p class="navbar-text pull-left"></p>
 				<a href = "./signup.php" class="navbar-btn btn-success btn pull-right">Volunteer with us!</a>
 
 			</div>
