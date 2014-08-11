@@ -9,7 +9,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
-<body background="#ecf0f1" !important;> 
+<body> 
 	<?php   
 	if (isset($_GET['login_error']))
 	{
@@ -77,7 +77,8 @@
 			width:35%;
 			overflow:hidden;
         	font-size: 18px;
-        	word-spacing: 5px
+        	word-spacing: 5px;
+        	margin-top: 190px;
 		} 
 
 		.carousel-control.left, .carousel-control.right {
@@ -142,7 +143,7 @@
 		</div>
 
 
-
+		<div class="well">
 		<div id="myCarousel" class="carousel container slide">
 			<h2></br></h2>
 			<ol class="carousel-indicators">
@@ -193,7 +194,7 @@
 		</div>
 
 		<div id="text">
-			<p></br></br></br></br></br></br></br></br>
+			<p>
 			A crowd sourced project of multi-perspective views of New York's urban landscape. 
 			Together we will synthesize 4-dimensional perspective of New York city. The data being obtained from this art and science project will be available to all the contributors.
 			Interested in joining the group? Great.. Register with us! We will get back to you soon!
@@ -246,6 +247,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 
 			<script type="text/javascript">
